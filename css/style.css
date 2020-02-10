@@ -1,0 +1,18 @@
+#navBar{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    background-color: #9a784f;
+}
+
+#navBar > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem{
+    float: left;
+    padding: 10px;
+    font-family: Helvetica,Arial,sans-serif;
+}
