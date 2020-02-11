@@ -233,3 +233,36 @@ a{
 .address{
     margin-top: 8px;
 }
+
+/* About us */
+
+.aboutContainer{
+    width: 640px;
+    margin-left: 500px;
+}
+
+.aboutHeader{
+    color: #cc0d1c;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+.aboutImgLeft {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.aboutImgRight{
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+.aboutFooter{
+    
+    height: 350px;
+    padding-top: 155px;
+    background-image: url("../images/ornament_2-background.png");
+    background-size: 120% 125% ;
+}
+#test *{
+    color: #d8cfc6;
+}
