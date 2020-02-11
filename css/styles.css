@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 #slider{
     margin: auto; 
     width: 950px;
@@ -41,14 +44,15 @@
     list-style-type: none;
     padding: 20px 60px;     
     box-sizing: border-box;
+    display: block;
 }
 
-a{
+.sliderItemLink{
    color: red;
    text-decoration: none;
 }
 
-li{
+.sliderItem{
    width: 16%;
    height: 100px;
    display: inline-block;
@@ -56,20 +60,176 @@ li{
    text-align: center 
 }
 
-img {
+.sliderImg{
    max-width:100%;
    max-height: 75%;
 }
 
-li:hover{
+.sliderItem:hover{
    filter: none
 }
 
-.test{
+.mslider{
     width:100%; 
     min-height: 483px;
     background-image: url("../images/ornament_2-background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.day{
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.dayItem{
+    margin-top: 4px;
+}
+
+.contactImg{
+    margin-left: 20px;width: 500px;display: block;float: left;
+}
+
+.contactItem{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.contactMail{
+    color: #cc0d1c;
+}
+
+.detailsHeader{
+    color: #cc0d1c;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+.daysList{
+    list-style-type: none;
+    margin-left: -40px;
+    color: #54301a;
+}
+
+.detailsContainer{
+    width: 185px;display: block;float: left;
+}
+
+#preBTN{
+    position: relative;
+    top: 110px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: #CC3532;
+    color: white;
+    border-radius: 50%;
+}
+
+#nxtBTN{
+    position: relative;
+    top: -137px;
+    left: 900px;
+    width: 35px;
+    height: 35px;
+    background-color: #CC3532;
+    color: white;
+    border-radius: 50%;
+}
+
+.phone{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+
+.contactContainer{
+    width: 200px;
+    display: block;
+    float: left
+}
+
+.sliderContainer{
+    width: 950px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+
+.homeAboutContainer{
+    width: 900px;
+    margin: auto;
+    color: #d8cfc6;
+    margin-top: -100px;
+}
+
+.homeAboutComponent{
+    width: 380px;
+    display: block;
+    float: left;
+    margin-right: 40px;
+    margin-top: -15px;
+}
+
+.cateringLink{
+    width: 430px;
+    height: 165px;
+    display: block;
+    float: left;
+    background-color:rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+.cateringTxt{
+    margin: 15px;
+    width: 190px;
+    margin-top:-20px;
+    float: left;
+    color: white;
+}
+
+.cateringImg{
+    display: block;
+    float: left;
+}
+
+.aboutLinkColor{
+    color: white;
+}
+
+.aboutLinkArrowColor{
+    color: red;
+}
+
+.footerContainer{
+    display: block;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.footerDetailsContainer{
+    width: 390px;
+    display: block;
+    float: left;
+}
+
+.footerDetailsHeader{
+    color: #cc0d1c;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+
+.footerDetailsTxt{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.address{
+    margin-top: 8px;
 }
