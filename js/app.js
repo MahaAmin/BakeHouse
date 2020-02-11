@@ -1,4 +1,3 @@
-
 var preBTN=document.getElementById("preBTN");
 var nxtBTN=document.getElementById("nxtBTN");
 
@@ -93,3 +92,5 @@ function slide(){
 
 }
 setInterval(slide,3000)
+
+
