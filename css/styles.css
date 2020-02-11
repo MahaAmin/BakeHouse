@@ -1,0 +1,75 @@
+#slider{
+    margin: auto; 
+    width: 950px;
+    height: 400px;
+    text-align: justify;
+    opacity: 1;
+}
+
+#sliderImg{
+    float: right;
+}
+
+#sliderHeader{
+    color: #cc0d1c;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+
+#sliderTxt{
+    font-size: 1.4em;
+    margin-top: 50px;
+    width: 370px;
+    color: #8d7e6f;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+
+#sliderLinkContainer{
+    margin-top: 50px;
+}
+
+#sliderLink{
+    font-size: 1.4em;
+    color: #54301a;
+    text-decoration: none;
+    font-family: 'CoralRegular',sans-serif;
+}
+
+#menuSlide{
+    background-image: url("../images/scroller.png");
+    width: 949px;
+    height: 178px;
+    list-style-type: none;
+    padding: 20px 60px;     
+    box-sizing: border-box;
+}
+
+a{
+   color: red;
+   text-decoration: none;
+}
+
+li{
+   width: 16%;
+   height: 100px;
+   display: inline-block;
+   filter: grayscale(100%);
+   text-align: center 
+}
+
+img {
+   max-width:100%;
+   max-height: 75%;
+}
+
+li:hover{
+   filter: none
+}
+
+.test{
+    width:100%; 
+    min-height: 483px;
+    background-image: url("../images/ornament_2-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

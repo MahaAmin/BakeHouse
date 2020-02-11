@@ -1,18 +1,68 @@
 <!DOCTYPE html>
-<html>  
-    <head>
-        <title>Home Bake</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="navBar">
-            <ul>
-                <li class="navItem"><a href="html/home.html">Home</a></li>
-                <li class="navItem"><a href="html/aboutUs.html">About Us</a></li>
-                <li class="navItem"><a href="html/ourRange.html">Our Range</a></li>
-                <li class="navItem"><a href="html/catering.html">Catering</a></li>
-                <li class="navItem"><a href="html/contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="slider" >
+            <img id="sliderImg" src="images/s-catering.jpg"/>
+            <h3 id="sliderHeader">TREATS</h3>
+            <p id="sliderTxt">
+                    We realise it's not always about decadent desserts and celebrations. Sometimes you're just looking for a down-to-earth sweet treat to satisfy your appetite
+            </p>
+            <div id="sliderLinkContainer">
+                <a href="#" id="sliderLink">View our range!  &ThickSpace; >
+                </a>
+            </div>
+    </div>
+    <div style="width: 950px;margin: auto;"> 
+        <button id="preBTN">previous</button>
+        <ul id="menuSlide" >
+            <a href="#">
+                <li>
+                    <img src="images/all/celebration.jpg" />
+                    <p>celebration</p>    
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <img src="images/all/childrens.jpg"/>
+                    <p>childrens</p>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <img src="images/all/dessert.jpg"/>
+                    <p>dessert</p>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <img src="images/all/savouries.jpg"/>
+                    <p>savouries</p>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <img src="images/all/health.jpg"/>
+                    <p>health</p>   
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <img src="images/all/cupcakes.jpg"/>
+                    <p>cupcakes</p>
+                </li>
+            </a>
+        </ul>
+        <button id="nxtBTN">next</button>
+    </div>
+    <div class="test" >
+    </div>
+    <script src="js/app.js"></script>
+</body>
 </html>
