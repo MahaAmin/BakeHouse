@@ -27,8 +27,6 @@ class cackCards {
         this.desc = desc
     }
     drawFirstPageCard(e) {
-        console.log(e);
-
         var arr = celebrationArr
         if (e == undefined || e.target.text == "Celebration Cakes") {
             flag = "true"
@@ -47,14 +45,17 @@ class cackCards {
             }
             listOfCards.innerHTML = cardsToDraw
 
-        } else if (e.target.text == "Children's Cakes") {
+        } else if (e.target.text == "Children's Cakes" || childrenCounter > 1) {
             flag = "false"
             arr = childrenArr
-            console.log(arr);
-
             cardsToDraw = ""
-            var val = (e.target.value - 1) * 6
-            for (let index = 0; index < arr.length; index++) {
+            if (e.target.value >= 1) {
+                var val = (e.target.value - 1) * 6
+            }
+            else{
+                val = 0
+            }
+            for (let index = val; index < val + 6 && index < arr.length; index++) {
                 cardsToDraw += `<li class="cardsLi">
                 <img src="${arr[index].imgPath}" alt="Round mud cake"
                     class="img1" />
@@ -98,7 +99,7 @@ class cackCards {
 }
 var CelibrationCard = new cackCards("images/products/Round-sponge-chocolate-smarties-cake-175.jpg", "Round mud cake", "Celebrate in style with our mud cake. Our unique recipe results in a lighter density cake just right to be encased in freshly whipped cream and grated chocolate.")
 var ChildrenCard = new cackCards("images/products/Animal-cupcakes-pig-206.jpg", "DOLL CAKE (PINK)", "Our traditional doll cakes feature layers of frothy sponge and fresh cream, and a butter cream gown of your own design.")
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index < 10; index++) {
     if (index == 0) {
         celebratonCounter = 1
         pagesToDraw = ""
@@ -111,6 +112,7 @@ for (let index = 0; index < 5; index++) {
 }
 
 children.addEventListener("click", function call(e) {
+    celebratonCounter = 1
     for (let index = 0; index < 23; index++) {
         if (index == 0) {
             childrenCounter = 1
@@ -127,7 +129,8 @@ children.addEventListener("click", function call(e) {
     ChildrenCard.drawFirstPageCard(e)
 })
 celebration.addEventListener("click", function call(e) {
-    for (let index = 0; index < 5; index++) {
+    childrenCounter = 1
+    for (let index = 0; index < 10; index++) {
         if (index == 0) {
             celebratonCounter = 1
             pagesToDraw = ""
