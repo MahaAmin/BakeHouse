@@ -3,6 +3,7 @@ a{
 }
 #slider{
     margin: auto; 
+    margin-top: 85px;
     width: 950px;
     height: 400px;
     text-align: justify;
@@ -265,4 +266,135 @@ a{
 }
 #test *{
     color: #d8cfc6;
+}
+
+/* Header and Navigation-Bar */
+header{
+    display: block;
+    margin-top: 15px;
+    height: 200px;
+}
+
+#headerBlock{
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+    width: 950px;
+}
+
+#headerHomeLogo{
+    background: url("../images/header.png") 40px 0 no-repeat;
+    color: #cc0d1c;
+    float: left;
+    height: 200px;
+    width: 290px;
+}
+
+#home-logo{
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 200px;
+    width: 290px;
+
+}
+
+#navBar{
+    display: block;
+    background: url("../images/header.png") -250px -40px no-repeat;
+    float: left;
+    height: 95px;
+    margin-top: -160px;
+    margin-left: 290px;
+    width: 660px;
+}
+
+#navList{
+    margin-left: 65px;
+    width: 650px;
+    height: 30px;
+    margin: 33px 0 0 30px;
+}
+
+.nav-item{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 80px;
+}
+
+.nav-item-link{
+    background: url("../images/header.png") -340px -160px no-repeat;
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 100%;
+}
+
+
+#nav-home{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 80px;
+}
+
+#nav-home-link, a:hover, a:visited{
+    background-position: -340px -190px;
+}
+
+#nav-about{
+    width: 120px;
+    display: block;
+    float: left;
+    height: 30px;
+}
+
+#nav-about-link{
+    background-position: -418px -160px;
+}
+
+#nav-range{
+    width: 122px;
+}
+
+#nav-range-link{
+    background-position: -538px -160px;
+}
+
+#nav-catering{
+    width: 111px;
+}
+
+#nav-catering-link{
+    background-position: -660px -160px;
+}
+
+#nav-contact{
+    width: 85px;
+}
+
+#nav-contact-link{
+    background-position: -771px -160px;
+}
+
+#nav-facebook{
+    margin-left: 15px;
+    float: left;
+}
+
+#nav-facebook-link{
+    color: red;
+    background: url("../images/fb-icon.png") top left no-repeat;
+    display: block;
+    height: 25px;
+    width: 25px;
+    text-indent: -9999px;
 }
