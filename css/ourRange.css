@@ -1790,3 +1790,426 @@ header nav ul {
 	border-radius: 50%;
 	margin-right: 20px;
 }
+a{
+    text-decoration: none;
+}
+#slider{
+    margin: auto; 
+    margin-top: 85px;
+    width: 950px;
+    height: 400px;
+    text-align: justify;
+    opacity: 1;
+}
+
+#sliderImg{
+    float: right;
+}
+
+#sliderHeader{
+    color: #cc0d1c;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+
+#sliderTxt{
+    font-size: 1.4em;
+    margin-top: 50px;
+    width: 370px;
+    color: #8d7e6f;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+
+#sliderLinkContainer{
+    margin-top: 50px;
+}
+
+#sliderLink{
+    font-size: 1.4em;
+    color: #54301a;
+    text-decoration: none;
+    font-family: 'CoralRegular',sans-serif;
+}
+
+#menuSlide{
+    background-image: url("../images/scroller.png");
+    width: 949px;
+    height: 178px;
+    list-style-type: none;
+    padding: 20px 60px;     
+    box-sizing: border-box;
+    display: block;
+}
+
+.sliderItemLink{
+   color: red;
+   text-decoration: none;
+}
+
+.sliderItem{
+   width: 16%;
+   height: 100px;
+   display: inline-block;
+   filter: grayscale(100%);
+   text-align: center 
+}
+
+.sliderImg{
+   max-width:100%;
+   max-height: 75%;
+}
+
+.sliderItem:hover{
+   filter: none
+}
+
+.mslider{
+    width:100%; 
+    min-height: 483px;
+    background-image: url("../images/ornament_2-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.day{
+    font-weight: bold;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.dayItem{
+    margin-top: 4px;
+}
+
+.contactImg{
+    margin-left: 20px;width: 500px;display: block;float: left;
+}
+
+.contactItem{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.contactMail{
+    color: #cc0d1c;
+}
+
+.detailsHeader{
+    color: #cc0d1c;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+.daysList{
+    list-style-type: none;
+    margin-left: -40px;
+    color: #54301a;
+}
+
+.detailsContainer{
+    width: 185px;display: block;float: left;
+}
+
+#preBTN{
+    position: relative;
+    top: 110px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: #CC3532;
+    color: white;
+    border-radius: 50%;
+}
+
+#nxtBTN{
+    position: relative;
+    top: -137px;
+    left: 900px;
+    width: 35px;
+    height: 35px;
+    background-color: #CC3532;
+    color: white;
+    border-radius: 50%;
+}
+
+.phone{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+
+.contactContainer{
+    width: 200px;
+    display: block;
+    float: left
+}
+
+.sliderContainer{
+    width: 950px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+
+.homeAboutContainer{
+    width: 900px;
+    margin: auto;
+    color: #d8cfc6;
+    margin-top: -100px;
+}
+
+.homeAboutComponent{
+    width: 380px;
+    display: block;
+    float: left;
+    margin-right: 40px;
+    margin-top: -15px;
+}
+
+.cateringLink{
+    width: 430px;
+    height: 165px;
+    display: block;
+    float: left;
+    background-color:rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 15px;
+
+}
+
+.cateringTxt{
+    margin: 15px;
+    width: 190px;
+    margin-top:-20px;
+    float: left;
+    color: white;
+}
+
+.cateringImg{
+    display: block;
+    float: left;
+}
+
+.aboutLinkColor{
+    color: white;
+}
+
+.aboutLinkArrowColor{
+    color: red;
+}
+
+.footerContainer{
+    display: block;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.footerDetailsContainer{
+    width: 390px;
+    display: block;
+    float: left;
+}
+
+.footerDetailsHeader{
+    color: #cc0d1c;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+
+.footerDetailsTxt{
+    color: #54301a;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+
+.address{
+    margin-top: 8px;
+}
+
+/* About us */
+
+.aboutContainer{
+    width: 75%;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+.aboutHeader{
+    color: #cc0d1c;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+}
+.aboutImgLeft {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.aboutImgRight{
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+.aboutFooter{
+    
+    height: 350px;
+    padding-top: 155px;
+    background-image: url("../images/ornament_2-background.png");
+    background-size: 120% 125% ;
+}
+#test *{
+    color: #d8cfc6;
+}
+
+/* Header and Navigation-Bar */
+header{
+    display: block;
+    margin-top: 15px;
+    height: 200px;
+}
+
+#headerBlock{
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+    width: 950px;
+}
+
+#headerHomeLogo{
+    background: url("../images/header.png") 40px 0 no-repeat;
+    color: #cc0d1c;
+    float: left;
+    height: 200px;
+    width: 290px;
+}
+
+#home-logo{
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 200px;
+    width: 290px;
+
+}
+
+#navBar{
+    display: block;
+    background: url("../images/header.png") -250px -40px no-repeat;
+    float: left;
+    height: 95px;
+    margin-top: -160px;
+    margin-left: 290px;
+    width: 660px;
+}
+
+#navList{
+    margin-left: 65px;
+    width: 650px;
+    height: 30px;
+    margin: 33px 0 0 30px;
+}
+
+.nav-item{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 80px;
+}
+
+.nav-item-link{
+    background: url("../images/header.png") -340px -160px no-repeat;
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 100%;
+}
+
+
+#nav-home{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 80px;
+}
+
+#nav-home-link:hover{
+    background-position: -340px -190px;
+}
+
+#nav-about{
+    width: 120px;
+    display: block;
+    float: left;
+    height: 30px;
+}
+
+
+#nav-about-link{
+    background-position: -418px -160px;
+}
+
+#nav-about-link:hover{
+    background-position: -418px -192px;
+}
+
+#nav-range{
+    width: 122px;
+}
+
+#nav-range-link{
+    background-position: -538px -160px;
+}
+
+#nav-range-link:hover{
+    background-position: -538px -190px;
+}
+
+#nav-catering{
+    width: 111px;
+}
+
+#nav-catering-link{
+    background-position: -660px -160px;
+}
+
+#nav-catering-link:hover{
+    background-position: -660px -190px;
+}
+
+#nav-contact{
+    width: 85px;
+}
+
+#nav-contact-link{
+    background-position: -771px -160px;
+}
+
+#nav-contact-link:hover{
+    background-position: -771px -190px;
+}
+
+#nav-facebook{
+    margin-left: 15px;
+    float: left;
+}
+
+#nav-facebook-link:hover{
+    height: 25px;
+    background-position: bottom;
+}
+
+#nav-facebook-link{
+    color: red;
+    background: url("../images/fb-icon.png") top left no-repeat;
+    display: block;
+    height: 25px;
+    width: 25px;
+    text-indent: -9999px;
+}
