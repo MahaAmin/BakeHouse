@@ -346,7 +346,7 @@ header{
     width: 80px;
 }
 
-#nav-home-link, a:hover, a:visited{
+#nav-home-link:hover{
     background-position: -340px -190px;
 }
 
@@ -357,8 +357,13 @@ header{
     height: 30px;
 }
 
+
 #nav-about-link{
     background-position: -418px -160px;
+}
+
+#nav-about-link:hover{
+    background-position: -418px -192px;
 }
 
 #nav-range{
@@ -369,12 +374,20 @@ header{
     background-position: -538px -160px;
 }
 
+#nav-range-link:hover{
+    background-position: -538px -190px;
+}
+
 #nav-catering{
     width: 111px;
 }
 
 #nav-catering-link{
     background-position: -660px -160px;
+}
+
+#nav-catering-link:hover{
+    background-position: -660px -190px;
 }
 
 #nav-contact{
@@ -385,9 +398,18 @@ header{
     background-position: -771px -160px;
 }
 
+#nav-contact-link:hover{
+    background-position: -771px -190px;
+}
+
 #nav-facebook{
     margin-left: 15px;
     float: left;
+}
+
+#nav-facebook-link:hover{
+    height: 25px;
+    background-position: bottom;
 }
 
 #nav-facebook-link{
