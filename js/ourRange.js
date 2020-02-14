@@ -131,7 +131,9 @@ class cackCards {
     }
 }
 var CelibrationCard = new cackCards("../images/products/Round-sponge-chocolate-smarties-cake-175.jpg", "Round mud cake", "Celebrate in style with our mud cake. Our unique recipe results in a lighter density cake just right to be encased in freshly whipped cream and grated chocolate.")
+var CelibrationCard2 = new cackCards("../images/products/Round-mud-cake-chocolate-173.jpg", "Round mud cake", "Celebrate in style with our mud cake. Our unique recipe results in a lighter density cake just right to be encased in freshly whipped cream and grated chocolate.")
 var ChildrenCard = new cackCards("../images/products/Animal-cupcakes-pig-206.jpg", "DOLL CAKE (PINK)", "Our traditional doll cakes feature layers of frothy sponge and fresh cream, and a butter cream gown of your own design.")
+var ChildrenCard2 = new cackCards("../images/products/Animal-cupcakes-lion-207.jpg", "DOLL CAKE (PINK)", "Our traditional doll cakes feature layers of frothy sponge and fresh cream, and a butter cream gown of your own design.")
 for (let index = 0; index < 15; index++) {
     if (index == 0) {
         celebratonCounter = 1
@@ -141,7 +143,12 @@ for (let index = 0; index < 15; index++) {
         CelibrationCard.drawPages(celebratonCounter)
         celebratonCounter++
     }
-    celebrationArr.push(CelibrationCard)
+    if (index % 2 == 0) {
+        celebrationArr.push(CelibrationCard)
+    }
+    else{
+        celebrationArr.push(CelibrationCard2)
+    }
 }
 
 children.addEventListener("click", function call(e) {
@@ -156,7 +163,12 @@ children.addEventListener("click", function call(e) {
             ChildrenCard.drawPages(childrenCounter)
             childrenCounter++
         }
-        childrenArr.push(ChildrenCard)
+        if (index % 2 == 0) {
+            childrenArr.push(ChildrenCard)
+        }
+        else{
+            childrenArr.push(ChildrenCard2)
+        }
     }
     celebration.classList.remove("active")
     children.classList.add("active")
@@ -174,7 +186,12 @@ celebration.addEventListener("click", function call(e) {
             CelibrationCard.drawPages(celebratonCounter)
             celebratonCounter++
         }
-        celebrationArr.push(CelibrationCard)
+        if (index % 2 == 0) {
+            celebrationArr.push(CelibrationCard)
+        }
+        else{
+            celebrationArr.push(CelibrationCard2)
+        }
     }
     children.classList.remove("active")
     celebration.classList.add("active")
