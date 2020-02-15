@@ -5,10 +5,16 @@ var img = document.getElementById("img")
 var desc = document.getElementById("desc")
 var errMessage = document.getElementById("err")
 var successMessage = document.getElementById("success")
+
+var selectedImagePath=""
+
 sub.addEventListener("click",function(e){
+
     e.preventDefault();
-    err.innerHTML=""
+    errMessage.innerHTML=""
+    errMessage.style.visibility="hidden"
     successMessage.textContent=""
+    successMessage.style.visibility="hidden"
     var chkErr =false;
     var err="<ul>"
     console.log(img.value);
@@ -27,6 +33,7 @@ sub.addEventListener("click",function(e){
     err+="</ul>"
     if (chkErr){
         errMessage.innerHTML = err
+        errMessage.style.visibility="visible"
     }else{
         var obj = {
             title: titlec.value,
@@ -43,6 +50,7 @@ sub.addEventListener("click",function(e){
         arr.push(obj)
         localStorage.setItem(`${typec.value}`,JSON.stringify(arr))
         successMessage.textContent="Done"
+        successMessage.style.visibility="visible"
         titlec.value=""
         img.value=""
         desc.value=""

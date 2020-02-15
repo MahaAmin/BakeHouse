@@ -9,29 +9,44 @@
 </head>
 <body>
         <form>
-            Choose Type:* <select id="type" required>
-                            <option>Celebration Cakes</option>
-                            <option>Children's Cakes</option>
-                            <option>Dessert Cakes</option>
-                            <option>Savouries</option>
-                            <option>Health Cakes</option>
-                            <option>Cupcakes</option>
-                            <option>Treats</option>
-                            <option>Catering</option>
-                        </select><br>
-            Title:* <input type="text" id="title" required/><br>
-            Image:* <input type="file" accept="image/png, image/jpeg" id="img" required/><br>
-            Description:* <textarea id="desc" cols="50" rows="4" required></textarea><br>
-            <input type="submit" id="submit" />
+            <fieldset>
+                <legend>Contact Us Today!</legend>
+                <label>Type:* </label><select id="type" required>
+                                <option>Celebration Cakes</option>
+                                <option>Children's Cakes</option>
+                                <option>Dessert Cakes</option>
+                                <option>Savouries</option>
+                                <option>Health Cakes</option>
+                                <option>Cupcakes</option>
+                                <option>Treats</option>
+                                <option>Catering</option>
+                            </select><br>
+
+                <label for="title">Title:* </label>
+                <input type="text" id="title" name="title" placeholder="Title ..">
+
+                <div class="file-upload">
+                    <div class="file-select">
+                      <div class="file-select-button" id="fileName">Choose Image *</div>
+                      <div class="file-select-name" id="noFile">No images chosen...</div> 
+                      <input type="file" name="chooseImage" accept="image/png, image/jpeg" id="img">
+                    </div>
+                  </div>
+    
+    
+                  <label>Description:* </label><textarea id="desc" cols="50" rows="4" required></textarea><br>
+                <input type="submit" id="submit" />
+                <div id="output" >
+                    <div id="err" style="visibility: hidden;">
+            
+                    </div>
+                    <div id="success" style="visibility: hidden;">
+            
+                    </div>
+                </div>
+                <img src="" id="Test"/>
+            </fieldset>
     </form>
-    <div id="output">
-        <div id="err">
-
-        </div>
-        <div id="success">
-
-        </div>
-    </div>
     <script src="../js/admin.js"></script>
 </body>
 </html>
