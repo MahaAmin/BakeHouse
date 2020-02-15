@@ -7,7 +7,7 @@ var errMessage = document.getElementById("err")
 var successMessage = document.getElementById("success")
 sub.addEventListener("click",function(e){
     e.preventDefault();
-    err.innerHTML=""
+    errMessage.innerHTML=""
     successMessage.textContent=""
     var chkErr =false;
     var err="<ul>"
@@ -30,7 +30,7 @@ sub.addEventListener("click",function(e){
     }else{
         var obj = {
             title: titlec.value,
-            img: img.value,
+            img: `../images/products/${img.files[0].name}`,
             desc: desc.value
         }
 

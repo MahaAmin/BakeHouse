@@ -877,7 +877,7 @@ header .wrapper {
 	overflow: hidden;
 }
 
-body#home header .wrapper {}
+/* body#home header .wrapper {} */
 
 #siteoftheday {
 	position: absolute;

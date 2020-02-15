@@ -20,6 +20,21 @@ var beforeTableStr = ""
 table = document.querySelector("#table")
 var tableStr = ""
 
+
+if (localStorage.getItem(`Children's Cakes`)) {
+    var LSchildrenArr = JSON.parse(localStorage.getItem(`Children's Cakes`))
+} else {
+    var LSchildrenArr = []
+}
+
+if (localStorage.getItem(`Celebration Cakes`)) {
+    var LScelebrationArr = JSON.parse(localStorage.getItem(`Celebration Cakes`))
+} else {
+    var LScelebrationArr = []
+}
+var CelibrationCard
+var ChildrenCard
+
 class cackCards {
     constructor(imgPath, title, desc) {
         this.imgPath = imgPath
@@ -84,8 +99,7 @@ class cackCards {
             cardsToDraw = ""
             if (e.target.value >= 1) {
                 var val = (e.target.value - 1) * 6
-            }
-            else{
+            } else {
                 val = 0
             }
             for (let index = val; index < val + 6 && index < arr.length; index++) {
@@ -130,45 +144,33 @@ class cackCards {
         }
     }
 }
-var CelibrationCard = new cackCards("../images/products/Round-sponge-chocolate-smarties-cake-175.jpg", "Round mud cake", "Celebrate in style with our mud cake. Our unique recipe results in a lighter density cake just right to be encased in freshly whipped cream and grated chocolate.")
-var CelibrationCard2 = new cackCards("../images/products/Round-mud-cake-chocolate-173.jpg", "Round mud cake", "Celebrate in style with our mud cake. Our unique recipe results in a lighter density cake just right to be encased in freshly whipped cream and grated chocolate.")
-var ChildrenCard = new cackCards("../images/products/Animal-cupcakes-pig-206.jpg", "DOLL CAKE (PINK)", "Our traditional doll cakes feature layers of frothy sponge and fresh cream, and a butter cream gown of your own design.")
-var ChildrenCard2 = new cackCards("../images/products/Animal-cupcakes-lion-207.jpg", "DOLL CAKE (PINK)", "Our traditional doll cakes feature layers of frothy sponge and fresh cream, and a butter cream gown of your own design.")
-for (let index = 0; index < 15; index++) {
+for (let index = 0; index < LScelebrationArr.length; index++) {
     if (index == 0) {
         celebratonCounter = 1
         pagesToDraw = ""
     }
+    CelibrationCard = new cackCards(LScelebrationArr[index].img, LScelebrationArr[index].title, LScelebrationArr[index].desc)
     if (celebrationArr.length == 0 || celebrationArr.length % 6 == 0) {
         CelibrationCard.drawPages(celebratonCounter)
         celebratonCounter++
     }
-    if (index % 2 == 0) {
-        celebrationArr.push(CelibrationCard)
-    }
-    else{
-        celebrationArr.push(CelibrationCard2)
-    }
+    celebrationArr.push(CelibrationCard)
 }
 
 children.addEventListener("click", function call(e) {
     celebratonCounter = 0
     childrenArr = []
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < 25; index++) {
         if (index == 0) {
             childrenCounter = 1
             pagesToDraw = ""
         }
+        ChildrenCard = new cackCards(LSchildrenArr[0].img, LSchildrenArr[0].title, LSchildrenArr[0].desc)
         if (childrenArr.length == 0 || childrenArr.length % 6 == 0) {
             ChildrenCard.drawPages(childrenCounter)
             childrenCounter++
         }
-        if (index % 2 == 0) {
-            childrenArr.push(ChildrenCard)
-        }
-        else{
-            childrenArr.push(ChildrenCard2)
-        }
+        childrenArr.push(ChildrenCard)
     }
     celebration.classList.remove("active")
     children.classList.add("active")
@@ -177,24 +179,25 @@ children.addEventListener("click", function call(e) {
 celebration.addEventListener("click", function call(e) {
     childrenCounter = 0
     celebrationArr = []
-    for (let index = 0; index < 15; index++) {
+    for (let index = 0; index < LScelebrationArr.length; index++) {
         if (index == 0) {
             celebratonCounter = 1
             pagesToDraw = ""
         }
+        CelibrationCard = new cackCards(LScelebrationArr[index].img, LScelebrationArr[index].title, LScelebrationArr[index].desc)
         if (celebrationArr.length == 0 || celebrationArr.length % 6 == 0) {
             CelibrationCard.drawPages(celebratonCounter)
             celebratonCounter++
         }
-        if (index % 2 == 0) {
-            celebrationArr.push(CelibrationCard)
-        }
-        else{
-            celebrationArr.push(CelibrationCard2)
-        }
+        celebrationArr.push(CelibrationCard)
     }
     children.classList.remove("active")
     celebration.classList.add("active")
     CelibrationCard.drawFirstPageCard(e)
 })
+
 CelibrationCard.drawFirstPageCard()
+if (localStorage.getItem("children") == "true") {
+    children.click()
+    localStorage.removeItem("children")
+}
