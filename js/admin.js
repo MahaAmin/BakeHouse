@@ -8,6 +8,10 @@ var successMessage = document.getElementById("success")
 
 var selectedImagePath=""
 
+img.addEventListener("change",function(e){
+   document.getElementById("noFile").textContent=e.target.files[0].name
+})
+
 sub.addEventListener("click",function(e){
 
     e.preventDefault();
@@ -54,6 +58,6 @@ sub.addEventListener("click",function(e){
         titlec.value=""
         img.value=""
         desc.value=""
+        document.getElementById("noFile").textContent="No images chosen..."
     }
-    
 })

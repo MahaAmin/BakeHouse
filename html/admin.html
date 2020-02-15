@@ -10,8 +10,8 @@
 <body>
         <form>
             <fieldset>
-                <legend>Contact Us Today!</legend>
-                <label>Type:* </label><select id="type" required>
+                <legend>Add New Card : </legend>
+                <label>Type: <span>*</span> </label><select id="type" required>
                                 <option>Celebration Cakes</option>
                                 <option>Children's Cakes</option>
                                 <option>Dessert Cakes</option>
@@ -22,19 +22,19 @@
                                 <option>Catering</option>
                             </select><br>
 
-                <label for="title">Title:* </label>
+                <label for="title">Title: <span>*</span> </label>
                 <input type="text" id="title" name="title" placeholder="Title ..">
 
                 <div class="file-upload">
                     <div class="file-select">
-                      <div class="file-select-button" id="fileName">Choose Image *</div>
+                      <div class="file-select-button" id="fileName">Choose Image <span>*</span></div>
                       <div class="file-select-name" id="noFile">No images chosen...</div> 
-                      <input type="file" name="chooseImage" accept="image/png, image/jpeg" id="img">
+                      <input type="file" name="chooseImage" accept="image/png, image/jpeg" id="img" >
                     </div>
                   </div>
     
     
-                  <label>Description:* </label><textarea id="desc" cols="50" rows="4" required></textarea><br>
+                  <label>Description: <span>*</span> </label><textarea id="desc" cols="50" rows="4" required></textarea><br>
                 <input type="submit" id="submit" />
                 <div id="output" >
                     <div id="err" style="visibility: hidden;">
@@ -44,7 +44,6 @@
             
                     </div>
                 </div>
-                <img src="" id="Test"/>
             </fieldset>
     </form>
     <script src="../js/admin.js"></script>
