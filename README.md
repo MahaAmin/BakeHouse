@@ -32,6 +32,6 @@ Password: 123456
 ***
 
 ### Contributors:
-|![Kareem_Elkasaby](<img src="images/kareem.jpg" width="200" height="400"/>)|![Mina_Maher](images/mina.jpeg)|![Maha_Amin](images/maha.jpeg)|
+|![Kareem_Elkasaby](<img src="images/kareem.jpg" width="393px" height="393px"/>)|![Mina_Maher](images/mina.jpeg)|![Maha_Amin](images/maha.jpeg)|
 |:-----------------:|:-----------:|:-----------------:|
 |[Kareem El-Kasaby](https://github.com/kareemelkasaby1)|[Mina Maher](https://github.com/MinaMaher0)|[Maha Amin](https://github.com/MahaAmin)|
