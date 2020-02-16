@@ -7,9 +7,21 @@ var errMessage = document.getElementById("err")
 var successMessage = document.getElementById("success")
 
 var selectedImagePath=""
-
+var picFile = ""
 img.addEventListener("change",function(e){
-   document.getElementById("noFile").textContent=e.target.files[0].name
+    document.getElementById("noFile").textContent=e.target.files[0].name
+    var picReader = new FileReader();    
+    picReader.addEventListener("load", readerLoad);
+
+    function readerLoad(event) {
+        picFile = event.target.result;
+        console.log("inside ",picFile);
+        
+    }
+    var file = e.target.files[0];
+    //Read the image
+    picReader.readAsDataURL(file);
+    
 })
 
 sub.addEventListener("click",function(e){
@@ -39,9 +51,11 @@ sub.addEventListener("click",function(e){
         errMessage.innerHTML = err
         errMessage.style.visibility="visible"
     }else{
+        console.log("hahah ",picFile);
+        
         var obj = {
             title: titlec.value,
-            img: img.value,
+            img: picFile,
             desc: desc.value
         }
 
