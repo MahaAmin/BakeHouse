@@ -9,7 +9,7 @@ var sliderItemsIdx=0;
 
 var preAction = function (){
     if (sliderItemsIdx > 0){        
-        var allAnchors = document.querySelectorAll("ul a")
+        var allAnchors = document.querySelectorAll(".mslider a")
         --sliderItemsIdx;
         for (var i=sliderItemsIdx;i<sliderItemsIdx+6;++i){
             var img = allAnchors[i-sliderItemsIdx].querySelector("a li img")
@@ -23,7 +23,7 @@ preBTN.addEventListener("click",preAction)
 
 var nxtAction = function (){
     if (sliderItemsIdx+6 < sliderListItems.length){
-        var allAnchors = document.querySelectorAll("ul a")
+        var allAnchors = document.querySelectorAll(".mslider a")
         ++sliderItemsIdx;
         for (var i=sliderItemsIdx;i<sliderItemsIdx+6;++i){
             var img = allAnchors[i-sliderItemsIdx].querySelector("a li img")
@@ -44,7 +44,7 @@ var arr = [
     {
         header:"Cupcakes",
         txt:"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion ",
-        img:"images/s-celebration.jpg"
+        img:"images/s-cupcakes.jpg"
     },
     {
         header:"Children's Cakes",
