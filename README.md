@@ -11,6 +11,7 @@ $ google-chrome https://mahaamin.github.io/BakeHouse/index.html
 To view items in **Our Range** tab you will first need to create some cake-objects to be stored in the local storage:
 
 * Use the admin panel tab:
+
 ![Admin-Panel](images/admin-panel-screenshot.png)
 
 ***
@@ -32,6 +33,6 @@ Password: 123456
 ***
 
 ### Contributors:
-|![Kareem_Elkasaby](<img src="images/kareem.jpg" width="393px" height="393px"/>)|![Mina_Maher](images/mina.jpeg)|![Maha_Amin](images/maha.jpeg)|
+|![Kareem_Elkasaby](images/kareem1.jpg)|![Mina_Maher](images/mina.jpg)|![Maha_Amin](images/maha.jpg)|
 |:-----------------:|:-----------:|:-----------------:|
 |[Kareem El-Kasaby](https://github.com/kareemelkasaby1)|[Mina Maher](https://github.com/MinaMaher0)|[Maha Amin](https://github.com/MahaAmin)|
