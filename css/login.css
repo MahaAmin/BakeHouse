@@ -107,3 +107,21 @@ input {
     padding-bottom: 10px;
     visibility: hidden;
 }
+
+#nav-admin{
+  background-image: url(../images/admin-logo.png);
+  background-size: 72px 31px;
+  display: block;
+  height: 100%;
+}
+
+#nav-admin-link{
+background: none;
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  height: 100%;
+}

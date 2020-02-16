@@ -403,23 +403,21 @@ header{
     background-position: -771px -190px;
 }
 
-#nav-facebook{
-    margin-left: 15px;
-    float: left;
-}
-
-#nav-facebook-link:hover{
-    height: 25px;
-    background-position: bottom;
-}
-
-#nav-facebook-link{
-    color: red;
-    background: url("../images/fb-icon.png") top left no-repeat;
+#nav-admin{
+    background-image: url(../images/admin-logo.png);
+    background-size: 72px 31px;
     display: block;
-    height: 25px;
-    width: 25px;
-    text-indent: -9999px;
+    height: 100%;
+}
+
+#nav-admin-link{
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 100%;
 }
 
 /* Contact Page */
@@ -429,10 +427,10 @@ header{
     bottom: auto;
     width: 100%;
     top: 20px;
-    background: url("../images/_ornament_2-background.jpg") center -3px no-repeat;
-    height: 438px;
+    background-image: url("../images/_ornament_2-background.jpg");
+    background-size: 125% 125%;
     clear: both;
-    padding-top: 100px;
+    padding-top: 150px;
     color: #d8cfc6;
     overflow: hidden;
     z-index: 0;
@@ -534,6 +532,7 @@ header{
 }
 
 #contact-wrapper{
+    margin: auto;
     position: relative;
     margin-top: 70px;
     z-index: 2;

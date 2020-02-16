@@ -2195,21 +2195,20 @@ header{
     background-position: -771px -190px;
 }
 
-#nav-facebook{
-    margin-left: 15px;
-    float: left;
-}
-
-#nav-facebook-link:hover{
-    height: 25px;
-    background-position: bottom;
-}
-
-#nav-facebook-link{
-    color: red;
-    background: url("../images/fb-icon.png") top left no-repeat;
+#nav-admin{
+    background-image: url(../images/admin-logo.png);
+    background-size: 72px 31px;
     display: block;
-    height: 25px;
-    width: 25px;
-    text-indent: -9999px;
+    height: 100%;
+}
+
+#nav-admin-link{
+	background: none;
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 100%;
 }
