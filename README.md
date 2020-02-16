@@ -2,7 +2,7 @@
 
 Bake House is a website for Keith Bakery home. It is a specialized pastry shop. It has a wide range from celebration cakes, children cakes, cupcakes, health cakes, .... and more.
 
-# How To Run Website Locally:
+### How To Run Website Locally:
 
 In your browser type the website url, or open the terminal and type: 
 ``` sh
@@ -13,21 +13,25 @@ To view items in **Our Range** tab you will first need to create some cake-objec
 * Use the admin panel tab:
 ![Admin-Panel](images/admin-panel-screenshot.png)
 
+***
 * Sign-In using: 
 ```
 Username: admin@iti.com
 Password: 123456
 ```
+***
 * Add some items to be viewed in **Our Range**.
  
+***
 
-
-## Used Technologies:
+### Used Technologies:
 * HTML5
 * CSS
 * JavaScript
 
-## Contributors:
-|![Kareem_Elkasaby](images/kareem.jpg =393x393)|![Mina_Maher](images/mina.jpeg)|![Maha_Amin](images/maha.jpeg)|
+***
+
+### Contributors:
+|![Kareem_Elkasaby](<img src="images/kareem.jpg" width="200" height="400"/>)|![Mina_Maher](images/mina.jpeg)|![Maha_Amin](images/maha.jpeg)|
 |:-----------------:|:-----------:|:-----------------:|
 |[Kareem El-Kasaby](https://github.com/kareemelkasaby1)|[Mina Maher](https://github.com/MinaMaher0)|[Maha Amin](https://github.com/MahaAmin)|
