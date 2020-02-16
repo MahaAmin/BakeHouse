@@ -35,6 +35,45 @@ if (localStorage.getItem(`Celebration Cakes`)) {
 var CelibrationCard
 var ChildrenCard
 
+function drawChildrensDetails() {
+    introStr = "Our fully-customised, fun and friendly range of specialty cakes for children are guaranteed to bring a smile to the face of the birthday boy or girl"
+    intro.innerHTML = introStr
+    beforeCakesStr = `<a href="#">Our Range</a>  &#62; Children's Cakes`
+    beforeCakes.innerHTML = beforeCakesStr
+    beforeTableStr = `<a href="#">Our Range</a>  &#62; Children's Cakes`
+    beforeTable.innerHTML = beforeTableStr
+    tableStr = `<h4>Our Five-Step Ordering Process</h4>
+    <p class="intro">Follow the five-step process to create the cake of your child's dreams. The final delicious result is limited only to by your imagination, but these are a few of our all time favourites.</p>
+    <ol>
+        <li><span>Choose your cake base - vanilla sponge, chocolate sponge or mud cake</span></li>
+        <li><span>Choose your size</span></li>
+        <li><span>Choose the colour of your icing</span></li>
+        <li><span>Choose your sides - grated chocolate, nougat, flaked almonds or 100s and 1000s</span>
+        </li>
+        <li><span>Write your special message</span></li>
+    </ol>`
+    table.innerHTML = tableStr
+}
+
+function drawCelebrationDetails() {
+    introStr = "Our traditional celebration cakes are the perfect finishing touch to your special occasion. Make yours unique by selecting your base, size, colour, sides and message"
+    intro.innerHTML = introStr
+    beforeCakesStr = `<a href="#">Our Range</a> &#62; Celebration Cakes`
+    beforeCakes.innerHTML = beforeCakesStr
+    tableStr = `<h4>Our Five-Step Ordering Process</h4>
+    <p class="intro">Featuring three layers of airy sponge with a fresh cream centre, they're so easy to
+        order using our simple five-step system.</p>
+    <ol>
+        <li><span>Choose your cake base - vanilla sponge, chocolate sponge or mud cake</span></li>
+        <li><span>Choose your size</span></li>
+        <li><span>Choose the colour of your icing</span></li>
+        <li><span>Choose your sides - grated chocolate, nougat, flaked almonds or 100s and 1000s</span>
+        </li>
+        <li><span>Write your special message</span></li>
+    </ol>`
+    table.innerHTML = tableStr
+}
+
 class cackCards {
     constructor(imgPath, title, desc) {
         this.imgPath = imgPath
@@ -44,22 +83,7 @@ class cackCards {
     drawFirstPageCard(e) {
         var arr = celebrationArr
         if (e == undefined || e.target.text == "Celebration Cakes") {
-            introStr = "Our traditional celebration cakes are the perfect finishing touch to your special occasion. Make yours unique by selecting your base, size, colour, sides and message"
-            intro.innerHTML = introStr
-            beforeCakesStr = `<a href="#">Our Range</a> &#62; Celebration Cakes`
-            beforeCakes.innerHTML = beforeCakesStr
-            tableStr = `<h4>Our Five-Step Ordering Process</h4>
-            <p class="intro">Featuring three layers of airy sponge with a fresh cream centre, they're so easy to
-                order using our simple five-step system.</p>
-            <ol>
-                <li><span>Choose your cake base - vanilla sponge, chocolate sponge or mud cake</span></li>
-                <li><span>Choose your size</span></li>
-                <li><span>Choose the colour of your icing</span></li>
-                <li><span>Choose your sides - grated chocolate, nougat, flaked almonds or 100s and 1000s</span>
-                </li>
-                <li><span>Write your special message</span></li>
-            </ol>`
-            table.innerHTML = tableStr
+            drawCelebrationDetails()
             flag = "true"
             cardsToDraw = ""
             for (let index = 0; index < 6; index++) {
@@ -77,23 +101,7 @@ class cackCards {
             listOfCards.innerHTML = cardsToDraw
 
         } else if (e.target.text == "Children's Cakes" || childrenCounter > 0) {
-            introStr = "Our fully-customised, fun and friendly range of specialty cakes for children are guaranteed to bring a smile to the face of the birthday boy or girl"
-            intro.innerHTML = introStr
-            beforeCakesStr = `<a href="#">Our Range</a>  &#62; Children's Cakes`
-            beforeCakes.innerHTML = beforeCakesStr
-            beforeTableStr = `<a href="#">Our Range</a>  &#62; Children's Cakes`
-            beforeTable.innerHTML = beforeTableStr
-            tableStr = `<h4>Our Five-Step Ordering Process</h4>
-            <p class="intro">Follow the five-step process to create the cake of your child's dreams. The final delicious result is limited only to by your imagination, but these are a few of our all time favourites.</p>
-            <ol>
-                <li><span>Choose your cake base - vanilla sponge, chocolate sponge or mud cake</span></li>
-                <li><span>Choose your size</span></li>
-                <li><span>Choose the colour of your icing</span></li>
-                <li><span>Choose your sides - grated chocolate, nougat, flaked almonds or 100s and 1000s</span>
-                </li>
-                <li><span>Write your special message</span></li>
-            </ol>`
-            table.innerHTML = tableStr
+            drawChildrensDetails()
             flag = "false"
             arr = childrenArr
             cardsToDraw = ""
@@ -158,9 +166,14 @@ for (let index = 0; index < LScelebrationArr.length; index++) {
 }
 
 children.addEventListener("click", function call(e) {
+    if (localStorage.getItem(`Children's Cakes`)) {
+        var LSchildrenArr = JSON.parse(localStorage.getItem(`Children's Cakes`))
+    } else {
+        var LSchildrenArr = []
+    }
     celebratonCounter = 0
     childrenArr = []
-    for (let index = 0; index < 25; index++) {
+    for (let index = 0; index < LSchildrenArr.length; index++) {
         if (index == 0) {
             childrenCounter = 1
             pagesToDraw = ""
@@ -174,9 +187,23 @@ children.addEventListener("click", function call(e) {
     }
     celebration.classList.remove("active")
     children.classList.add("active")
-    ChildrenCard.drawFirstPageCard(e)
+    if (LSchildrenArr.length == 0) {
+        drawChildrensDetails()
+        cardsToDraw = ""
+        cardsToDraw += `<li class="cardsLi">
+        <h4>There are no cards</h4>
+        </li>`
+        listOfCards.innerHTML = cardsToDraw
+    } else {    
+        ChildrenCard.drawFirstPageCard(e)
+    }
 })
 celebration.addEventListener("click", function call(e) {
+    if (localStorage.getItem(`Celebration Cakes`)) {
+        LScelebrationArr = JSON.parse(localStorage.getItem(`Celebration Cakes`))
+    } else {
+        LScelebrationArr = []
+    }
     childrenCounter = 0
     celebrationArr = []
     for (let index = 0; index < LScelebrationArr.length; index++) {
@@ -193,11 +220,29 @@ celebration.addEventListener("click", function call(e) {
     }
     children.classList.remove("active")
     celebration.classList.add("active")
-    CelibrationCard.drawFirstPageCard(e)
+    if (LScelebrationArr.length == 0) {
+        drawCelebrationDetails()
+        cardsToDraw = ""
+        cardsToDraw += `<li class="cardsLi">
+                        <h4>There are no cards</h4>
+                        </li>`
+        listOfCards.innerHTML = cardsToDraw
+    } else {
+        CelibrationCard.drawFirstPageCard(e)
+    }
 })
 
-CelibrationCard.drawFirstPageCard()
-if (localStorage.getItem("children") == "true") {
+if (LScelebrationArr.length == 0) {
+    cardsToDraw = ""
+    cardsToDraw += `<li class="cardsLi">
+    <h4>There are no cards</h4>
+    </li>`
+    listOfCards.innerHTML = cardsToDraw
+} else {
+    CelibrationCard.drawFirstPageCard()
+}
+var selected = localStorage.getItem("selected")
+if (selected == "childrens") {
     children.click()
-    localStorage.removeItem("children")
+    localStorage.removeItem("selected")
 }
