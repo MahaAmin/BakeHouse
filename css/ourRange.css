@@ -1728,7 +1728,6 @@ body#home p#koodoz a:hover {
 }
 
 header nav ul {
-	margin-left: 65px !important;
 	width: 650px;
 }
 
@@ -2032,7 +2031,7 @@ a{
 .aboutContainer{
     width: 75%;
     margin-left: 200px;
-    margin-top: 0px;
+    margin-top: 45px;
 }
 
 .aboutHeader{
@@ -2110,7 +2109,7 @@ header{
     margin-left: 65px;
     width: 650px;
     height: 30px;
-    margin: 33px 0 0 30px;
+    margin: 33px 0 0 55px;
 }
 
 .nav-item{
@@ -2184,7 +2183,7 @@ header{
 }
 
 #nav-contact{
-    width: 85px;
+    width: 92px;
 }
 
 #nav-contact-link{
@@ -2197,7 +2196,8 @@ header{
 
 #nav-admin{
     background-image: url(../images/admin-logo.png);
-    background-size: 72px 31px;
+	background-size: 72px 31px;
+	background-repeat: no-repeat;
     display: block;
     height: 100%;
 }

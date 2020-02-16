@@ -856,7 +856,7 @@ header nav {
 
 header nav ul {
 	height: 30px;
-	margin: 32px 0 0 78px;
+	margin: 32px 0 0 50px;
 	width: 517px;
 }
 
@@ -941,7 +941,7 @@ body#home header .wrapper {}
 }
 
 #m-contact {
-	width: 85px;
+	width: 92px;
 }
 
 #m-contact a {
@@ -1728,7 +1728,6 @@ body#home p#koodoz a:hover {
 }
 
 header nav ul {
-	margin-left: 65px !important;
 	width: 650px;
 }
 
@@ -2197,7 +2196,8 @@ header{
 
 #nav-admin{
     background-image: url(../images/admin-logo.png);
-    background-size: 72px 31px;
+	background-size: 72px 31px;
+	background-repeat: no-repeat;
     display: block;
     height: 100%;
 }
