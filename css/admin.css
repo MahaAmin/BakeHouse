@@ -9,14 +9,16 @@ input{
     margin: auto;
 }
 
-/****** IGNORE ******/
 body {
-    width: 600px;
-    margin: 100px auto;
+    margin: 0 auto;
     background-color: #f5f5f5;
 }
 
-/****** CODE ******/
+form{
+    width: 500px;
+    margin: auto;
+
+}
 
 .file-upload {
     display: block;
@@ -135,7 +137,7 @@ input[type=submit] {
     width: 30%;
     display: block;
     margin: auto;
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -145,7 +147,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: red;
 }
 
 input[type=text], select, textarea {

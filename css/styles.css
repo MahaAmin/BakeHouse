@@ -316,7 +316,7 @@ header{
 
 #navList{
     margin-left: 65px;
-    width: 650px;
+    width: 100%;
     height: 30px;
     margin: 33px 0 0 30px;
 }
@@ -403,21 +403,204 @@ header{
     background-position: -771px -190px;
 }
 
-#nav-facebook{
-    margin-left: 15px;
+#nav-admin{
+    background-image: url(../images/admin-logo.png);
+    background-size: 72px 31px;
+    display: block;
+    height: 100%;
+}
+
+#nav-admin-link{
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    height: 100%;
+}
+
+/* Contact Page */
+
+#contact-footer{
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    top: 20px;
+    background-image: url("../images/_ornament_2-background.jpg");
+    background-size: 125% 125%;
+    clear: both;
+    padding-top: 150px;
+    color: #d8cfc6;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#contact-footer *{
+    position: relative;
+    z-index: 2;
+}
+
+#contact-footer-wrapper{
+    background: url("../images/footer-background-sections.png") top right no-repeat;
+    min-height: 330px;
+    overflow: hidden;
+    padding: 0 520px 0 40px;
+    width: 390px;
+    clear: both;
+    margin: 0 auto;
+}
+
+#contact-footer-wrapper h3{
+    color: #FFF;
+    font-size: 1.6em;
+    margin-top: 15px;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#contact-hours{
+    display: block;
+    float: left;
+    width: 185px;
+}
+
+#contact-hours h4{
+    padding-left: 2px;
+    font-family: 'CoralRegular',sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    color: #FFF;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#contact-hours ul{
+    margin: 0;
+}
+
+#contact-hours li{
+        list-style: none;
+}
+
+#contact-hours abbr{
+    display: inline-block;
+    width: 35px;
+}
+
+#contact-footer abbr{
+    color: #FFF;
+    font-weight: bold;
+}
+
+#contact-footer-vcard{
+    display: block;
+    float: left;
+    width: 205px;
+}
+
+#contact-footer-vcard h4{
+    font-family: 'CoralRegular', sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    color: #FFF;
+}
+
+#contact-footer-vcard a{
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+#contact-footer-tel{
+    font-size: 2.2em;
+    margin: 20px 0 15px 0;
+    color: #FFF;
+}
+
+#contact-footer-vcard p{
+    margin: 0;
+}
+
+#contact-footer-image{
+    display: block;
+    width: 500px;
+    height: 320px;
+    position: absolute;
+    top: 0px;
+    left: 445px;
+}
+
+#contact-wrapper{
+    margin: auto;
+    position: relative;
+    margin-top: 70px;
+    z-index: 2;
+    width: 950px;
+}
+
+#sidebar{
+    padding: 25px 50px 0 62px;
+    text-align: left;
+    width: 338px;
     float: left;
 }
 
-#nav-facebook-link:hover{
-    height: 25px;
-    background-position: bottom;
+#contact-form{
+    display: block;
 }
 
-#nav-facebook-link{
-    color: red;
-    background: url("../images/fb-icon.png") top left no-repeat;
+
+#contact-form input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e6e5e4;
+    color: #54301a;
+    font-size: 1.3em;
+    height: 28px;
+    padding: 0 10px;
+    width: 293px;
+    margin: 0 2px 25px 0;
+}
+
+#contact-form textarea{
+    background: none;
+    border: 1px solid #e6e6e6;
+    color: #54301a;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    width: 293px;
+    overflow: auto;
+}
+
+#contact-form button{
+    height: 38px;
+    width: 160px;
+    background: url("../images/buttons.png");
+    background-position: 0 -29px;
+    border: none;
     display: block;
-    height: 25px;
-    width: 25px;
+    margin: 0 0 0 auto;
     text-indent: -9999px;
+    overflow: visible;
+}
+
+#contact-info{
+    width: 390px;
+    float: left;
+    position: relative;
+    background: rgba(224, 215, 212, 0.35);
+    margin-top: 36px;
+    color: #54301a;
+    padding: 11px 50px;
+}
+
+#contact-info h3{
+    margin: 10px 0 15px 190px;
+    width: 305px;
+    color: #cc0d1c;
+    font-size: 2em;
+    font-family: 'BlissRegular',Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
 }
