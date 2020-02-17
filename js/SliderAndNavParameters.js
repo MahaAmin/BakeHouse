@@ -1,7 +1,7 @@
 
 var allLi = document.getElementsByClassName("side")
 var sliderListItems = ["celebration", "childrens", "dessert", "savouries", "health", "cupcakes", "treats", "catering"];
-var cateringID = document.querySelector("#testLefa")
+var cateringID = document.querySelector("#cateringID")
 cateringID.setAttribute('href', "../html/ourRange.html")
 function cateringEvent(x) {
     localStorage.setItem("selected", "catering")

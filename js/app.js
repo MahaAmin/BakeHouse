@@ -58,10 +58,6 @@ function changeHref() {
         }
     }
     preBTN.addEventListener("click", preAction)
-
-    console.log(allAnchors);
-
-
     var nxtAction = function () {
         if (sliderItemsIdx + 6 < sliderListItems.length) {
             var allAnchors = document.querySelectorAll(".homeSlider")

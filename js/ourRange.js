@@ -194,7 +194,7 @@ children.addEventListener("click", function call(e) {
         <h4>There are no cards</h4>
         </li>`
         listOfCards.innerHTML = cardsToDraw
-    } else {    
+    } else {
         ChildrenCard.drawFirstPageCard(e)
     }
 })
@@ -244,5 +244,7 @@ if (LScelebrationArr.length == 0) {
 var selected = localStorage.getItem("selected")
 if (selected == "childrens") {
     children.click()
+    localStorage.removeItem("selected")
+} else {
     localStorage.removeItem("selected")
 }
